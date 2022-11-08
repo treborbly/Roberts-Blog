@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% load profanity %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% block header %} 
+    <header>
+        <div id="header">
+            <h1 id="h1-header">Robert's Blog</h1>
+            <nav class="home-navbar">
+                <span class="greeting">Hello, {{request.user}}! </span>
+                <span class="logout"><a href="{% url 'logout' %}">Logout</a></span>
+            </nav>
+            <button class="add-blog"><a href="{% url 'create blog' %}">Create a Post!</a></button>
+            <br><br>
+        </div>
+    </header>   
+    {% endblock header %}
+    {% block content %} 
+        {% for blogs in content %} 
+            <div class="content">
+                <br>
+                <h1 class="blog_title">{{ blogs.title|censor }}</h1>
+                <h3 class="blog_author">-{{ blogs.author|censor }}</h3>
+                <h3 class="blog_creation_date">{{ blogs.date }}</h3><br>
+                <p class="blog_content">{{ blogs.content|censor }}</p>
+            </div>
+        {% endfor %}
+    {% endblock content %}
+    <script src= ></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+html {
+    overflow: hidden;
+    height: 100%;
+}
+
+body {
+    overflow: auto;
+    height: 100%;
+    background-image: url('../images/background.jpeg');
+    background-size: cover;
+}
+
+
+#h1-header {
+    text-align: center;
+    color: azure;
+    margin-top: 25px;
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 4vw;
+    padding-top: 20px;
+}
+
+.user-authentication {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.user-information {
+    font-family: monospace;
+    font-weight: bold;
+    color: beige;
+    font-size: 20px;
+    border-color: white;
+    border-radius: 10px;
+}
+
+.user-submit {
+    background-color: beige;
+    font-family: monospace;
+    width: 150px;
+    border-color: white;
+    border-radius: 10px;
+    position: relative;
+    left: 25%;
+    border-width: 1.5px;
+
+}
+
+.switch-to-login {
+    color: beige;
+    font-family: monospace;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: 5px;
+    text-align: center;
+
+}
+
+a {
+    color:lightcyan;
+}
+
+.user-login {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.username-login {
+    font-family: monospace;
+    font-weight: bold;
+    color: beige;
+    font-size: 20px;
+}
+
+.password-login {
+    font-family: monospace;
+    font-weight: bold;
+    color: beige;
+    font-size: 20px;
+}
+
+#login-submit {
+    font-family: monospace;
+    font-weight: bold;
+    color: beige;
+    font-size: 20px;
+}
+
+.username {
+    height: 20px;
+    width: 300px;
+}
+
+.password {
+    height: 20px;
+    width: 300px;
+}
+
+.greeting {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 20px;
+    color: azure;
+}
+
+.logout {
+    font-family: monospace;
+    font-weight: bold;
+    font-size: 13px;
+    color: maroon;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+  }
+
+.content {
+    background-color: gray;
+    opacity: 90%;
+    margin: auto;
+    width: 95%;
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border: 2px solid azure;
+    border-radius: 20px;
+}
+
+.blog_title {
+    color: whitesmoke;
+    font-family: monospace;
+    display: inline-block;
+    position: relative;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    padding-left: 10px;
+}
+.blog_author {
+    color: whitesmoke;
+    font-family: monospace;
+    position: relative;
+    padding-left: 10px;
+}
+.blog_creation_date {
+    font-family: monospace;
+    font-style: italic;
+    color: khaki;
+    padding-left: 10px;
+
+}
+.blog_content {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding-left: 10px;
+
+}
+
+.blog-create {
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    border: 3px solid azure;
+    border-radius: 20px;
+    background-color: grey;
+    width: 100vh;
+    height: 55vh;
+}
+#title-create{
+    margin-left: 23px;
+}
+#blog-create-submit{
+    margin-left: 20px;
+}
+
+.add-blog {
+    position: relative;
+    left: 88%;
+    background-color: lightgreen;
+}
+.add-blog a {
+    color: navy;
+    text-decoration: none;
+    font-style: italic;
+    font-family: monospace;
+}
+.errors {
+    background-color: black;
+    color: darkkhaki;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+.errorlist {
+    background-color: black;
+    color: darkkhaki;
+    font-family: monospace;
+    font-size: 20px;
+    font-weight: bold;
+}

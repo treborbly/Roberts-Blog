@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+{% extends 'base.html' %}
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    {% block header %} 
+    <header>
+        <h1 id="h1-header">Robert's Blog</h1>
+    </header>   
+    {% endblock header %}
+    {% block authentication %} 
+    <div class="user-authentication">
+        <form action="" method="POST">{% csrf_token %}
+            <p class="user-information">Username: {{ form.username }}</p>
+            <p class="user-information">First Name: {{ form.first_name }}</p>
+            <p class="user-information">Last Name: {{ form.last_name }}</p>
+            <p class="user-information">Email: {{ form.email }}</p>
+            <p class="user-information">Password: {{ form.password1 }}</p>
+            <p class="user-information">Confirm Password: {{ form.password2 }}</p>
+
+            <input type="submit" name="Create User" class="user-submit" id="user-submit" value="Create" />
+            {{form.errors}}
+            <br>
+            <p class="switch-to-login">Already have an account?<a href="{% url 'login page' %}"> Log in here</a></p>
+        </form>
+        
+    </div>
+    {% endblock authentication %}
+    <script src={% block scripts %} "{% static 'scripts/signup.js' %}" {% endblock scripts %}></script>
+</body>
+</html>
