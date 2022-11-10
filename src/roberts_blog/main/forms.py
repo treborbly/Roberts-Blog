@@ -22,7 +22,5 @@ class CreateBlog(forms.Form):
         widget=forms.TextInput(attrs={"class": "blog-author"}), required=False,
         validators=[validate_is_profane]
     )
-    #image = forms.ImageField( 
 
-    #)
 
