@@ -9,4 +9,3 @@ class Blog(models.Model):
     date = models.DateField(auto_now=True)
     content = models.TextField(validators=[validate_is_profane])
     author = models.CharField(max_length=50, default='none', validators=[validate_is_profane])
-    #image = models.ImageField()
